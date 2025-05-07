@@ -27,7 +27,7 @@ _ImageModel _$ImageModelFromJson(Map<String, dynamic> json) => _ImageModel(
   downloads: (json['downloads'] as num).toInt(),
   likes: (json['likes'] as num).toInt(),
   comments: (json['comments'] as num).toInt(),
-  userId: (json['user_id'] as num).toInt(),
+  userId: (json['userId'] as num).toInt(),
   user: json['user'] as String,
   userImageURL: json['userImageURL'] as String,
 );
@@ -54,7 +54,7 @@ Map<String, dynamic> _$ImageModelToJson(_ImageModel instance) =>
       'downloads': instance.downloads,
       'likes': instance.likes,
       'comments': instance.comments,
-      'user_id': instance.userId,
+      'userId': instance.userId,
       'user': instance.user,
       'userImageURL': instance.userImageURL,
     };

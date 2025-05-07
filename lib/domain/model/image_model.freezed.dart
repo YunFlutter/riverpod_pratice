@@ -16,7 +16,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$ImageModel {
 
- int get id; String get pageURL; String get type; String get tags; String get previewURL; int get previewWidth; int get previewHeight; String get webformatURL; int get webformatWidth; int get webformatHeight; String get largeImageURL; String? get fullHDURL; String? get imageURL; int get imageWidth; int get imageHeight; int get imageSize; int get views; int get downloads; int get likes; int get comments;@JsonKey(name: 'user_id') int get userId; String get user; String get userImageURL;
+ int get id; String get pageURL; String get type; String get tags; String get previewURL; int get previewWidth; int get previewHeight; String get webformatURL; int get webformatWidth; int get webformatHeight; String get largeImageURL; String? get fullHDURL; String? get imageURL; int get imageWidth; int get imageHeight; int get imageSize; int get views; int get downloads; int get likes; int get comments; int get userId; String get user; String get userImageURL;
 /// Create a copy of ImageModel
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -49,7 +49,7 @@ abstract mixin class $ImageModelCopyWith<$Res>  {
   factory $ImageModelCopyWith(ImageModel value, $Res Function(ImageModel) _then) = _$ImageModelCopyWithImpl;
 @useResult
 $Res call({
- int id, String pageURL, String type, String tags, String previewURL, int previewWidth, int previewHeight, String webformatURL, int webformatWidth, int webformatHeight, String largeImageURL, String? fullHDURL, String? imageURL, int imageWidth, int imageHeight, int imageSize, int views, int downloads, int likes, int comments,@JsonKey(name: 'user_id') int userId, String user, String userImageURL
+ int id, String pageURL, String type, String tags, String previewURL, int previewWidth, int previewHeight, String webformatURL, int webformatWidth, int webformatHeight, String largeImageURL, String? fullHDURL, String? imageURL, int imageWidth, int imageHeight, int imageSize, int views, int downloads, int likes, int comments, int userId, String user, String userImageURL
 });
 
 
@@ -102,7 +102,7 @@ as String,
 @JsonSerializable()
 
 class _ImageModel implements ImageModel {
-  const _ImageModel({required this.id, required this.pageURL, required this.type, required this.tags, required this.previewURL, required this.previewWidth, required this.previewHeight, required this.webformatURL, required this.webformatWidth, required this.webformatHeight, required this.largeImageURL, this.fullHDURL, this.imageURL, required this.imageWidth, required this.imageHeight, required this.imageSize, required this.views, required this.downloads, required this.likes, required this.comments, @JsonKey(name: 'user_id') required this.userId, required this.user, required this.userImageURL});
+  const _ImageModel({required this.id, required this.pageURL, required this.type, required this.tags, required this.previewURL, required this.previewWidth, required this.previewHeight, required this.webformatURL, required this.webformatWidth, required this.webformatHeight, required this.largeImageURL, this.fullHDURL, this.imageURL, required this.imageWidth, required this.imageHeight, required this.imageSize, required this.views, required this.downloads, required this.likes, required this.comments, required this.userId, required this.user, required this.userImageURL});
   factory _ImageModel.fromJson(Map<String, dynamic> json) => _$ImageModelFromJson(json);
 
 @override final  int id;
@@ -125,7 +125,7 @@ class _ImageModel implements ImageModel {
 @override final  int downloads;
 @override final  int likes;
 @override final  int comments;
-@override@JsonKey(name: 'user_id') final  int userId;
+@override final  int userId;
 @override final  String user;
 @override final  String userImageURL;
 
@@ -162,7 +162,7 @@ abstract mixin class _$ImageModelCopyWith<$Res> implements $ImageModelCopyWith<$
   factory _$ImageModelCopyWith(_ImageModel value, $Res Function(_ImageModel) _then) = __$ImageModelCopyWithImpl;
 @override @useResult
 $Res call({
- int id, String pageURL, String type, String tags, String previewURL, int previewWidth, int previewHeight, String webformatURL, int webformatWidth, int webformatHeight, String largeImageURL, String? fullHDURL, String? imageURL, int imageWidth, int imageHeight, int imageSize, int views, int downloads, int likes, int comments,@JsonKey(name: 'user_id') int userId, String user, String userImageURL
+ int id, String pageURL, String type, String tags, String previewURL, int previewWidth, int previewHeight, String webformatURL, int webformatWidth, int webformatHeight, String largeImageURL, String? fullHDURL, String? imageURL, int imageWidth, int imageHeight, int imageSize, int views, int downloads, int likes, int comments, int userId, String user, String userImageURL
 });
 
 
